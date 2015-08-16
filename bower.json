@@ -1,0 +1,23 @@
+{
+  "name": "SMUSCM Website",
+  "version": "0.1.0",
+  "authors": [
+    "Joel Kuntz <joel.kuntz.92@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "cs.smu.ca/society",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.0",
+    "jquery": "~2.1.4",
+    "moment": "~2.10.3",
+    "underscore": "~1.8.3"
+  }
+}

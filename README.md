@@ -15,7 +15,7 @@ View the live website [here](http://smucsm.github.io/)
 ## Development
 - Fork & Clone this repo
 - Open [index.html](index.html) (or better yet use a server like `python -m SimpleHTTPServer`)
-- Hack away
+- Hack away on the development branch (or branch off from here)
 - Create a pull request
 
 ## Deployment

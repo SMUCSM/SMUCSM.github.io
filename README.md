@@ -19,5 +19,6 @@ View the live website [here](http://smucsm.github.io/)
 - Create a pull request
 
 ## Deployment
+This is for maintainers only
 - Merge the changes into the master branch
 - profit

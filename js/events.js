@@ -32,7 +32,7 @@ $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/even
     // if any upcoming events
     if (upcomingEvents.length){
         // For each upcoming event
-        _.each(upcomingEvents, function(evt, i, list){
+        _.each(upcomingEvents.slice(0,6), function(evt, i, list){
             // Parse type of event, remove from description, set proper color
             var eventColor;
             var isTMHT = evt.description.indexOf(TMHT) > -1;

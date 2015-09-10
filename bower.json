@@ -15,8 +15,9 @@
     "tests"
   ],
   "dependencies": {
-    "material-design-lite": "~1.0.0",
     "jquery": "~2.1.4",
+    "jQuery-linkify": "linkifyjs#~1.1.7",
+    "material-design-lite": "~1.0.0",
     "moment": "~2.10.3",
     "underscore": "~1.8.3"
   }

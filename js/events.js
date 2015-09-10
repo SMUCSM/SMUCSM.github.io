@@ -64,13 +64,14 @@ $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/even
                 '<div class="section__circle-container'+ lastCircle +' mdl-cell mdl-cell--1-col mdl-cell--1-col-phone">'+
                 '    <div class="section__circle-container__circle mdl-color--'+eventColor+'"></div>'+
                 '</div>'+
-                '<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone">'+
+                '<div class="section__text mdl-cell mdl-cell--11-col-desktop mdl-cell--6-col-tablet mdl-cell--3-col-phone event-description">'+
                 '    <h5>'+evt.summary+'</h5>'+
                 '    <h5>'+moment(evt.start.dateTime).format('LLLL')+' to '+moment(evt.end.dateTime).format('h:mm A')+' - '+evt.location+'</h5>'+
                      evt.description+
                 '</div>'
             ); //$('.event-list').append
         }); //_.each(upcomingEvents)
+        $('.event-description').linkify({ target: "_blank" });
     } // if upcomingEvents.length
     else {
         $('.event-list').append(

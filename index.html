@@ -48,33 +48,6 @@
             <!-- Events -->
             <div class="mdl-layout__tab-panel is-active" id="events">
 
-                <!-- Event list -->
-                <section class="section--center mdl-grid mdl-grid--no-spacing">
-                    <div class="mdl-cell mdl-cell--12-col">
-                        <div class="mdl-grid mdl-grid--no-spacing event-list">
-                            <h4 class="mdl-cell mdl-cell--12-col">Upcoming Events</h4>
-                            <br><br>
-                            <!-- To be filled via script -->
-                        </div>
-                        <br>
-                        <div class="mdl-card__actions">
-                            <a href="https://www.google.com/calendar/embed?src=smu.csm%40gmail.com&ctz=America/Halifax" target="_blank" class="mdl-button">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                    View full calendar
-                                </button>
-                            </a>
-                            <a href="https://www.google.com/calendar/ical/smu.csm%40gmail.com/public/basic.ics" target="_blank" class="mdl-button">
-                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
-                                    Sync calendar
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-                </section>
-                <!-- /Event list -->
-
-                <hr class="spaced-hr">
-
                 <!-- Event overview -->
                 <section class="section--center mdl-grid mdl-grid--no-spacing">
                     <div class="mdl-cell mdl-cell--12-col">
@@ -115,6 +88,33 @@
                         </div>
                     </div>
                 </section>
+
+                <hr class="spaced-hr">
+
+                <!-- Event list -->
+                <section class="section--center mdl-grid mdl-grid--no-spacing">
+                    <div class="mdl-cell mdl-cell--12-col">
+                        <div class="mdl-grid mdl-grid--no-spacing event-list">
+                            <h4 class="mdl-cell mdl-cell--12-col">Upcoming Events</h4>
+                            <br><br>
+                            <!-- To be filled via script -->
+                        </div>
+                        <br>
+                        <div class="mdl-card__actions">
+                            <a href="https://www.google.com/calendar/embed?src=smu.csm%40gmail.com&ctz=America/Halifax" target="_blank" class="mdl-button">
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                    View full calendar
+                                </button>
+                            </a>
+                            <a href="https://www.google.com/calendar/ical/smu.csm%40gmail.com/public/basic.ics" target="_blank" class="mdl-button">
+                                <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored">
+                                    Sync calendar
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <!-- /Event list -->
 
                 <section></section> <!-- Spacer -->
                 <!-- /Event overview -->
@@ -247,6 +247,7 @@
 
     <script src="js/material.min.js"></script>
     <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.linkify.min.js"></script>
     <script src="js/moment.min.js"></script>
     <script src="js/underscore-min.js"></script>
     <script src="js/events.js"></script>

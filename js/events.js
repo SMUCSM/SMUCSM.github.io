@@ -1,14 +1,15 @@
 // Global strings that we are searching for / removing to parse the type of event
-var TMHT = '[TMHT]';   // Teach Me How To
+var TMHT  = '[TMHT]';  // Teach Me How To
 var TMHTC = '[TMHTC]'; // Teach Me How To Challenge Night
-var HS = '[HS]';       // Help Session
-var SE = '[SE]';       // Special Event
+var HS    = '[HS]';    // Help Session
+var SE    = '[SE]';    // Special Event
 
 //Get the events from google calendar API
 $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/events", {
     fields: "items(description,status,summary,location,start,end)",
     key: "AIzaSyDHzhC_rt5PQDwJvpS2-QkfMfogDaHhFdc"
-}).done(function(data){
+}).done(function(data)
+{
 
     console.log('the data', data.items);
 
@@ -40,19 +41,23 @@ $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/even
             var isHelpSession = evt.description.indexOf(HS) > -1;
             var isSpecialEvent = evt.description.indexOf(SE) > -1;
 
-            if (isTMHT){
+            if (isTMHT)
+            {
                 evt.description = evt.description.replace(TMHT, '');
                 eventColor = "red";
             }
-            else if (isChallengeNight){
+            else if (isChallengeNight)
+            {
                 evt.description = evt.description.replace(TMHTC, '');
                 eventColor = "green";
             }
-            else if (isHelpSession){
+            else if (isHelpSession)
+            {
                 evt.description = evt.description.replace(HS, '');
                 eventColor = "blue";
             }
-            else if (isSpecialEvent){
+            else if (isSpecialEvent)
+            {
                 evt.description = evt.description.replace(SE, '');
                 eventColor = "orange";
             }
@@ -73,7 +78,8 @@ $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/even
         }); //_.each(upcomingEvents)
         $('.event-description').linkify({ target: "_blank" });
     } // if upcomingEvents.length
-    else {
+    else
+    {
         $('.event-list').append(
             '<div class="section__circle-container last-circle mdl-cell mdl-cell--1-col mdl-cell--1-col-phone">'+
             '    <div class="section__circle-container__circle mdl-color--yellow"></div>'+
@@ -85,7 +91,8 @@ $.get("https://www.googleapis.com/calendar/v3/calendars/smu.csm%40gmail.com/even
         ); //$('.event-list').append
     } // else if upcoming events
 
-}).fail(function(data){
+}).fail(function(data)
+{
 	console.log('fail', data);
     $('.event-list').append(
         '<div class="section__circle-container last-circle mdl-cell mdl-cell--1-col mdl-cell--1-col-phone">'+
